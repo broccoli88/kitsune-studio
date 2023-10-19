@@ -1,0 +1,9 @@
+{
+	"inside": [
+		{ "name": "about", "link": "#" },
+		{ "name": "offer", "link": "#" },
+		{ "name": "work", "link": "#" },
+		{ "name": "contact", "link": "#" }
+	],
+	"outside": [{ "name": "about", "link": "#" }]
+}
