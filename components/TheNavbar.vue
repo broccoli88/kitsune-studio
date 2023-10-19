@@ -10,9 +10,7 @@
 
 <template>
 	<header class="navbar">
-		<picture class="w-14 aspect-auto">
-			<img src="images/kitsune-mask.png" alt="" />
-		</picture>
+		<AppLogo />
 		<button
 			@click="openMobileMenu"
 			class="nav__mobile-menu-btn w-8 aspect-square bg-transparent border-3 border-txt rounded-full grid place-content-center outline-none md:hidden"
