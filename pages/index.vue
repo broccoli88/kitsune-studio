@@ -1,10 +1,13 @@
-<script setup></script>
+<script setup>
+	useHead({
+		title: "Kitsune--studio -> Home Page",
+	});
+</script>
 
 <template>
-	<TheNavbar />
 	<main class="home">
-		<!-- <SectionHero /> -->
-		<!-- <SectionAbout /> -->
+		<SectionHero />
+		<SectionAbout />
 		<!-- <SectionOffer /> -->
 		<!-- <SectionWork /> -->
 		<!-- <SectionContact /> -->

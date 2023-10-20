@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-	<section class="h-screen"></section>
+	<section class="h-screen">
+		<AppHeader />
+	</section>
 </template>
 
 <style scoped></style>

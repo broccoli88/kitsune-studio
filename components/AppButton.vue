@@ -8,11 +8,19 @@
 			type: [String, Object],
 			default: "#",
 		},
+		title: {
+			type: String,
+			default: "Click to go to selected section",
+		},
 	});
 </script>
 
 <template>
-	<NuxtLink :to="link" class="btn flex gap-3 items-center lowercase">
+	<NuxtLink
+		:to="link"
+		class="btn flex gap-3 items-center lowercase"
+		type="button"
+	>
 		<div
 			class="btn-tag-outside w-10 h-10 border-3 rounded-full border-txt bg-transparent grid place-content-center"
 		>

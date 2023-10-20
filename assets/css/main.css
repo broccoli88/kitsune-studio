@@ -16,19 +16,20 @@
 	--clr-bg: hsl(330, 9%, 4%);
 	--clr-bg-lighter: #161314;
 	--clr-primary: #b61212;
+	--clr-primary2: #d11515;
 	--clr-secondary: #25585b;
-	--clr-accent: #edf6fb;
+	--clr-accent: hsl(201, 64%, 96%);
 	--clr-txt: #d6d7d7;
-	--clr-heading: #ffffff;
+	--clr-heading: #ebebeb;
 
 	--fsm-txt: 14px;
-	--fsm-h1: 60px;
+	--fsm-h1: 40px;
 	--fsm-h2: 30px;
 	--fsm-h3: 22px;
 	--fsm-btn: 16px;
 
 	--fsd-txt: 16px;
-	--fsd-h1: 80px;
+	--fsd-h1: 60px;
 	--fsd-h2: 40px;
 	--fsd-h3: 28px;
 	--fsd-btn: 18px;
@@ -52,7 +53,7 @@
 	font-size: var(--fsd-txt);
 	font-weight: 400;
 	line-height: 1.45;
-	letter-spacing: 1.5px;
+	letter-spacing: 2.5px;
 	color: var(--clr-txt);
 
 	background-color: var(--clr-bg);
@@ -63,6 +64,8 @@ h2,
 h3 {
 	line-height: 1.1;
 	font-weight: bold;
+	letter-spacing: 2px;
+	color: var(--clr-heading);
 }
 
 h1 {

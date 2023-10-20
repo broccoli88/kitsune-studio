@@ -7,10 +7,11 @@ export default {
                 'bg': '#0c0a0b',
                 'bg-lighter': '#161314',
                 'primary': '#b61212',
+                'primary2': '#d11515 ',
                 'secondary': '#25585b',
                 'accent': '#edf6fb',
                 'txt': '#d6d7d7',
-                'heading': '#ffffff',
+                'heading': '#ebebeb',
             },
             fontFamily: {
                 'bakemono': ['Bakemono', 'sans-serif'],

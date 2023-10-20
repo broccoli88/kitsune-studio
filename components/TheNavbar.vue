@@ -10,8 +10,10 @@
 
 <template>
 	<header class="navbar">
+		<AppSeparator class="nav__separator" />
 		<AppLogo />
 		<button
+			title="navbar menu button"
 			@click="openMobileMenu"
 			class="nav__mobile-menu-btn w-8 aspect-square bg-transparent border-3 border-txt rounded-full grid place-content-center outline-none md:hidden"
 		>
@@ -46,8 +48,12 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		padding-inline: 12px;
+		padding-inline: 20px;
 		padding-block: 20px;
+	}
+
+	.nav__separator {
+		display: none;
 	}
 
 	.navbar__nav {
@@ -95,7 +101,8 @@
 
 	@media (min-width: 768px) {
 		.navbar {
-			position: static;
+			position: absolute;
+			left: calc(100% - 300px);
 			width: 300px;
 			height: 100dvh;
 			height: 100vh;
@@ -104,31 +111,10 @@
 			align-items: start;
 			padding-left: 4vw;
 			padding-block: 40px 60px;
-			position: relative;
 		}
 
-		.navbar::before,
-		.navbar::after {
-			content: "";
-			position: absolute;
-			background-color: var(--clr-txt);
-			opacity: 0.2;
-		}
-
-		.navbar::before {
-			bottom: 90px;
-			left: 0;
-			width: 1px;
-			height: 40%;
-		}
-
-		.navbar::after {
-			bottom: 60px;
-			left: -4.5px;
-			width: 10px;
-			aspect-ratio: 1;
-
-			border-radius: 50%;
+		.nav__separator {
+			display: initial;
 		}
 
 		.navbar__nav {
