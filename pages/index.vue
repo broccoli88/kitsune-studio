@@ -6,9 +6,9 @@
 
 <template>
 	<main class="home">
-		<SectionHero />
-		<SectionAbout />
-		<!-- <SectionOffer /> -->
+		<!-- <SectionHero /> -->
+		<!-- <SectionAbout /> -->
+		<SectionOffer />
 		<!-- <SectionWork /> -->
 		<!-- <SectionContact /> -->
 	</main>

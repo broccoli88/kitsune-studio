@@ -2,7 +2,9 @@
 
 <template>
 	<header class="grid relative w-min whitespace-nowrap">
-		<h2>about ?</h2>
+		<h2>
+			<slot />
+		</h2>
 		<AppSeparator class="header--separator" />
 	</header>
 </template>
@@ -10,12 +12,13 @@
 <style scoped>
 	.header--separator {
 		--parent-height: min-content;
-		--parent-width: 300px;
+		--parent-width: 200px;
 		--sep-height: 1px;
 		--sep-width: 100%;
-		--sep-bottom: -16px;
+		--sep-bottom: -15px;
+		--sep-left: 5px;
 		--sep-line-bot: 4.5px;
-		--sep-line-left: 30px;
+		--sep-line-left: 20px;
 		--sep-dot-bot: 0;
 	}
 </style>

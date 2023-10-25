@@ -123,3 +123,9 @@ li {
 		font-size: var(--fsd-btn);
 	}
 }
+
+@layer components {
+	.section-container {
+		@apply px-5 mx-auto md:max-w-[77vw] md:px-0;
+	}
+}
