@@ -5,11 +5,11 @@
 </script>
 
 <template>
-	<main class="home">
+	<main>
 		<!-- <SectionHero /> -->
 		<!-- <SectionAbout /> -->
-		<SectionOffer />
-		<!-- <SectionWork /> -->
+		<!-- <SectionOffer /> -->
+		<SectionWork />
 		<!-- <SectionContact /> -->
 	</main>
 </template>

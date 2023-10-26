@@ -26,12 +26,14 @@
 	--fsm-h1: 40px;
 	--fsm-h2: 30px;
 	--fsm-h3: 22px;
+	--fsm-h4: 18px;
 	--fsm-btn: 16px;
 
 	--fsd-txt: 16px;
 	--fsd-h1: 60px;
 	--fsd-h2: 40px;
 	--fsd-h3: 28px;
+	--fsd-h4: 20px;
 	--fsd-btn: 18px;
 
 	--tr-def: 0.3s all ease-out;
@@ -61,7 +63,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	line-height: 1.1;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -78,6 +81,14 @@ h2 {
 
 h3 {
 	font-size: var(--fsm-h3);
+}
+
+h3 {
+	font-size: var(--fsm-h3);
+}
+
+h4 {
+	font-size: var(--fsm-h4);
 }
 
 picture,
@@ -117,6 +128,10 @@ li {
 
 	h3 {
 		font-size: var(--fsd-h3);
+	}
+
+	h4 {
+		font-size: var(--fsd-h4);
 	}
 
 	a {

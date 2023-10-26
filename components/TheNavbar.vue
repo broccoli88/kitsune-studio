@@ -101,9 +101,8 @@
 
 	@media (min-width: 768px) {
 		.navbar {
-			position: absolute;
-			left: calc(100% - 300px);
-			width: 300px;
+			position: relative;
+			width: 100%;
 			height: 100dvh;
 			height: 100vh;
 			margin-left: auto;

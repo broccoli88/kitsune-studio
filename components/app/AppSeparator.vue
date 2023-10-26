@@ -28,7 +28,7 @@
 		content: "";
 		position: absolute;
 		background-color: var(--clr-txt);
-		opacity: 0.2;
+		opacity: 0.3;
 	}
 
 	.separator::before {

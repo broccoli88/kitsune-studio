@@ -4,30 +4,39 @@
 	import SectionPartBody from "./section-part/SectionPartBody.vue";
 	import mainPageText from "../../data/main-page-text.json";
 
-	const imgSrc = "/images/about.png";
+	const imgSrc = "/images/offer.png";
 	const offer = mainPageText;
-	const subSectionText = offer.offer["sub-section"];
+	const subSectionTexts = offer.offer["sub-section"];
 </script>
 
 <template>
-	<SectionPartFrame>
-		<SectionPartHeader>offer ?</SectionPartHeader>
-		<SectionPartBody>
-			<p>{{ offer.offer.p }}</p>
-
-			<ul>
-				<li class="pl-7 mt-7">
-					<h3 class="offer__sub-section-title relative mb-">
-						{{ subSectionText.design.title }}
-					</h3>
-					<p class="">{{ subSectionText.design.text }}</p>
-				</li>
-			</ul>
-		</SectionPartBody>
+	<SectionPartFrame class="offer__frame">
+		<div>
+			<SectionPartHeader>what do we offer ?</SectionPartHeader>
+			<SectionPartBody class="md:pl-95">
+				<p>{{ offer.offer.p }}</p>
+				<ul>
+					<li
+						class="pl-7 mt-7"
+						v-for="subSection in subSectionTexts"
+						:key="subSection.title"
+					>
+						<h4 class="offer__sub-section-title relative mb-3">
+							{{ subSection.title }}
+						</h4>
+						<p class="md:pl-95">{{ subSection.text }}</p>
+					</li>
+				</ul>
+			</SectionPartBody>
+		</div>
+		<AppImage :img-src="imgSrc" class="offer--img" />
 	</SectionPartFrame>
 </template>
 
 <style scoped>
+	.offer__frame {
+		--align: flex-end;
+	}
 	.offer__sub-section-title::before {
 		content: "";
 		position: absolute;
@@ -38,5 +47,11 @@
 		border: 2px solid white;
 		border-radius: 50%;
 		transform: translateY(-50%);
+	}
+
+	.offer--img {
+		--right: 200px;
+		--top: 5vh;
+		--deg: 135deg;
 	}
 </style>

@@ -8,8 +8,8 @@
 <template>
 	<SectionPartFrame>
 		<SectionPartHeader> about ? </SectionPartHeader>
-		<SectionPartBody class="max-w-[50ch]">
-			<p>
+		<SectionPartBody>
+			<p class="pl-95">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 				enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -19,14 +19,15 @@
 				sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</SectionPartBody>
-		<AppImage :imgSrc="imgSrc" class="about--img" />
+		<AppImage :img-src="imgSrc" class="about--img" />
 	</SectionPartFrame>
 </template>
 
 <style scoped>
 	@media (min-width: 768px) {
 		.about--img {
-			--right: -28vw;
+			--right: -400px;
+			--top: 5vh;
 		}
 	}
 </style>

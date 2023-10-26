@@ -17,6 +17,9 @@ export default {
                 'bakemono': ['Bakemono', 'sans-serif'],
                 'walkway': ['Walkway', 'sans-serif']
             },
+            padding: {
+                '95': '95px'
+            },
             fontSize: {
                 'fsm-txt': '14px',
                 'fsm-h1': '60px',

@@ -12,7 +12,7 @@
 <style scoped>
 	.header--separator {
 		--parent-height: min-content;
-		--parent-width: 200px;
+		--parent-width: 40vw;
 		--sep-height: 1px;
 		--sep-width: 100%;
 		--sep-bottom: -15px;
