@@ -1,4 +1,18 @@
 <script setup>
+	defineProps({
+		title: {
+			type: String,
+			default: "",
+		},
+		description: {
+			type: String,
+			default: "",
+		},
+		preview: {
+			type: String,
+			default: "",
+		},
+	});
 	const projectRef = ref();
 
 	const showProject = (e) => {
@@ -19,17 +33,16 @@
 		<button class="project__btn" @click="showProject">
 			<AppButtonCircle class="project__btn-circle" />
 			<div class="project__description">
-				<h4 class="project__title">homey goat studio</h4>
+				<h4 class="project__title">{{ title }}</h4>
 			</div>
 		</button>
-		<NuxtPicture src="/images/hg.png" class="project__img" />
+		<NuxtPicture :src="preview" class="project__img" />
 
 		<div class="project__description-alt-wrapper">
 			<div class="project__description-alt">
-				<h4>homey goat studio</h4>
+				<h4>{{ title }}</h4>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Nemo, at?
+					{{ description }}
 				</p>
 			</div>
 		</div>
@@ -38,6 +51,12 @@
 
 <style scoped>
 	.project {
+		--tr-col: 0.5s;
+		--tr-txt: 0.6s;
+		--col-width-btn: 60px;
+		--space-block: 10px;
+		--space-inline: 12px;
+
 		display: grid;
 		position: relative;
 		cursor: pointer;
@@ -54,7 +73,7 @@
 	.project::after {
 		content: "";
 		position: absolute;
-		bottom: -10px;
+		bottom: var(--space-block) * -1;
 		right: 50%;
 		width: 80%;
 		height: 1px;
@@ -69,26 +88,26 @@
 		order: 2;
 		display: flex;
 		align-items: center;
-		gap: 12px;
-		padding-block: 10px;
+		gap: var(--space-inline);
+		padding-block: var(--space-block);
 	}
 
 	.project__img {
 		order: 1;
 	}
 
-	.project__description p {
+	.project__description-alt-wrapper {
 		display: none;
 	}
 
 	@media (min-width: 768px) {
 		.project {
-			grid-template-columns: 60px 0fr;
+			grid-template-columns: var(--col-width-btn) 0fr;
 			grid-template-rows: 70vh;
-			overflow: hidden;
-			transition: 1s all linear;
-			transform-origin: left;
-			position: relative;
+			/* overflow: hidden; */
+			transition: var(--tr-col) all ease-out;
+			/* transform-origin: left; */
+			/* position: relative; */
 			isolation: isolate;
 		}
 
@@ -104,15 +123,15 @@
 
 		.project--active {
 			flex: 1;
-			grid-template-columns: 60px 1fr;
+			grid-template-columns: var(--col-width-btn) 1fr;
 		}
 
 		.project__description-alt-wrapper {
 			position: absolute;
 			bottom: 0;
-			left: 60px;
-			width: calc(100% - 60px);
-			height: 60px;
+			left: var(--col-width-btn);
+			width: calc(100% - var(--col-width-btn));
+			height: var(--col-width-btn);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -121,7 +140,7 @@
 
 		.project__description-alt {
 			transform: translateX(-100%);
-			transition: 1s all linear 1s;
+			transition: var(--tr-txt) all linear var(--tr-col);
 			opacity: 0;
 		}
 
@@ -131,18 +150,18 @@
 		}
 
 		.project--active .project__description-alt {
-			transform: translateX(12px);
+			transform: translateX(var(--space-inline));
 			opacity: 1;
 		}
 
 		.project__btn {
 			flex-direction: column;
 			justify-content: flex-end;
-			padding-inline: 10px;
-			padding-block: 12px;
+			padding-inline: var(--space-block);
+			padding-block: var(--space-inline);
 			background-color: var(--clr-bg);
 			position: relative;
-			transition: 1s all linear;
+			transition: var(--tr-txt) all linear;
 		}
 
 		.project__btn::after {
@@ -161,6 +180,10 @@
 
 		.project--active .project__btn {
 			background-color: transparent;
+		}
+
+		.project--active .project__btn::after {
+			display: none;
 		}
 
 		.project__description {
@@ -182,8 +205,8 @@
 			left: 0;
 			width: 100%;
 
-			transform: translateY(12px);
-			transition: 1s all linear 1s;
+			transform: translateY(var(--space-inline));
+			transition: var(--tr-txt) all linear var(--tr-col);
 			opacity: 1;
 		}
 
@@ -199,11 +222,7 @@
 		.project__img {
 			position: absolute;
 			inset: 0;
-			z-index: -1;
-		}
-
-		.project__img :deep(img) {
-			object-position: top;
+			/* z-index: -1; */
 		}
 	}
 </style>

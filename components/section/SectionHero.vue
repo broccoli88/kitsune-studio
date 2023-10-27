@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+	import mainPageText from "@/data/main-page-text.json";
+</script>
 
 <template>
 	<section class="hero h-screen">
@@ -16,14 +18,10 @@
 			>
 				<!-- ?Think about placing text in bottom left corner -->
 				<header class="mb-8">
-					<p class="capitalize">Frontend Development & Design</p>
-					<h1 class="capitalize">Crafting Digital experiences</h1>
+					<p class="capitalize">{{ mainPageText.hero.subtitle }}</p>
+					<h1 class="capitalize">{{ mainPageText.hero.title }}</h1>
 				</header>
-				<p>
-					Welcome to my world of web design and development. I'm
-					Pawel, a passionate frontend developer dedicated to creating
-					elegant and interactive digital experiences.
-				</p>
+				<p>{{ mainPageText.hero.p }}</p>
 			</section>
 			<TheNavbar />
 		</div>

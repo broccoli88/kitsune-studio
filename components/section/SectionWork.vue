@@ -12,31 +12,33 @@
 		lastProject.classList.add("project--active");
 	};
 
-	onMounted(() => displayFirstProject());
+	onMounted(() => {
+		displayFirstProject();
+	});
 </script>
 
 <template>
 	<div class="min-h-screen grid gap-10 px-5 pb-16">
 		<SectionPartFrame class="work__frame">
 			<div>
-				<SectionPartHeader>our work ?</SectionPartHeader>
+				<SectionPartHeader>
+					{{ mainPageText.work.title }}</SectionPartHeader
+				>
 				<SectionPartBody>
-					<p class="md:pl-95">
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Lorem ipsum dolor sit, amet consectetur
-						adipisicing elit. Lorem ipsum dolor sit, amet
-						consectetur adipisicing elit.
-					</p>
+					<p class="md:pl-95">{{ mainPageText.work.p }}</p>
 				</SectionPartBody>
 			</div>
 		</SectionPartFrame>
 		<!--  /.work-frame -->
 
 		<div class="work__projects">
-			<SectionSectionPartProject />
-			<SectionSectionPartProject />
-			<SectionSectionPartProject />
-			<SectionSectionPartProject />
+			<SectionPartProject
+				v-for="(project, index) in projects"
+				:key="index"
+				:title="project.name"
+				:description="project.description"
+				:preview="project.previewImg"
+			/>
 		</div>
 	</div>
 </template>

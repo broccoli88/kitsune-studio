@@ -6,11 +6,11 @@
 
 <template>
 	<main>
-		<!-- <SectionHero /> -->
-		<!-- <SectionAbout /> -->
-		<!-- <SectionOffer /> -->
+		<SectionHero />
+		<SectionAbout />
+		<SectionOffer />
 		<SectionWork />
-		<!-- <SectionContact /> -->
+		<SectionContact />
 	</main>
 </template>
 

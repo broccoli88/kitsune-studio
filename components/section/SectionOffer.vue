@@ -12,7 +12,9 @@
 <template>
 	<SectionPartFrame class="offer__frame">
 		<div>
-			<SectionPartHeader>what do we offer ?</SectionPartHeader>
+			<SectionPartHeader>{{
+				mainPageText.offer.title
+			}}</SectionPartHeader>
 			<SectionPartBody class="md:pl-95">
 				<p>{{ offer.offer.p }}</p>
 				<ul>
