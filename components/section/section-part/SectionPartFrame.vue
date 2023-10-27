@@ -12,11 +12,12 @@
 
 <style scoped>
 	.section {
-		--_justify: var(--justify, center);
-		--_align: var(--align, initial);
 	}
 
 	.section-container {
+		--_justify: var(--justify, center);
+		--_align: var(--align, initial);
+
 		justify-content: var(--_justify);
 		align-items: var(--_align);
 	}

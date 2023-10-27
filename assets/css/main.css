@@ -13,7 +13,7 @@
 }
 
 :root {
-	--clr-bg: hsl(330, 9%, 4%);
+	--clr-bg: #0b090a;
 	--clr-bg-lighter: #161314;
 	--clr-primary: #b61212;
 	--clr-primary2: #d11515;
@@ -55,7 +55,7 @@
 	font-size: var(--fsd-txt);
 	font-weight: 400;
 	line-height: 1.45;
-	letter-spacing: 2.5px;
+	letter-spacing: 2px;
 	color: var(--clr-txt);
 
 	background-color: var(--clr-bg);

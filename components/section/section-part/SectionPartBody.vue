@@ -19,7 +19,7 @@
 	<article class="mt-11 grid max-w-[65ch]">
 		<slot> </slot>
 		<AppButton
-			class="justify-self-end mt-11"
+			class="justify-self-end mt-11 order-2"
 			:name="name"
 			:link="link"
 			:title="title"
