@@ -1,7 +1,7 @@
 <template>
-	<div class="overflow-y-hidden">
-		<TheMobileNav />
-		<NuxtPage />
+	<div>
+		<!-- <TheMobileNav /> -->
+		<!-- <NuxtPage /> -->
 		<!-- <TheFooter /> -->
 	</div>
 </template>

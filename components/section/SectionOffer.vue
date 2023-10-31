@@ -52,9 +52,8 @@
 	}
 
 	.offer--bg {
-		--right: -5vw;
+		--right: -40%;
 		--top: 5vh;
-		--deg: 135deg;
 		--opacity: 0.5;
 		--transparency: 70%;
 	}
@@ -62,10 +61,6 @@
 	@media (min-width: 768px) {
 		.offer--bg {
 			--right: 10vw;
-			--top: 5vh;
-			--deg: 135deg;
-			--opacity: 0.5;
-			--transparency: 70%;
 		}
 	}
 </style>

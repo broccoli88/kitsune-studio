@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<section class="overflow-hidden">
+	<section class="overflow-hidden relative">
 		<div class="section-container min-h-screen pt-14 flex flex-col">
 			<slot></slot>
 		</div>

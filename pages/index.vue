@@ -5,10 +5,11 @@
 </script>
 
 <template>
-	<main class="relative isolate overflow-x-hidden">
-		<NuxtPicture src="/images/bg1.png" class="hero-bg" />
-		<SectionHero />
-		<SectionAbout />
+	<main class="relative isolate overflow-hidden">
+		<!-- <NuxtPicture src="/images/bg1.png" class="hero-bg" /> -->
+		<!-- <NuxtPicture src="/images/contact-bg.png" class="contact-bg" /> -->
+		<!-- <SectionHero /> -->
+		<!-- <SectionAbout /> -->
 		<!-- <SectionOffer /> -->
 		<!-- <SectionWork /> -->
 		<!-- <SectionContact /> -->
@@ -16,19 +17,40 @@
 </template>
 
 <style scoped>
-	.hero-bg {
+	.hero-bg,
+	.contact-bg {
 		position: absolute;
-		top: 0;
 		left: 0;
-		width: 120%;
-		height: 140vh;
 		z-index: -1;
 		opacity: 0.5;
-		mask-image: linear-gradient(-240deg, black, transparent 75%);
 	}
 
-	.hero-bg :deep(img) {
+	.hero-bg {
+		top: 0;
+		width: 120%;
+		height: 140vh;
+		-webkit-mask-image: linear-gradient(-175deg, black, transparent);
+		mask-image: linear-gradient(-175deg, black, transparent 75%);
+	}
+
+	.hero-bg :deep(img),
+	.contact-bg :deep(img) {
 		object-position: center top;
+	}
+
+	.contact-bg {
+		bottom: -10vh;
+		width: 130%;
+		height: 160vh;
+		-webkit-mask-image: linear-gradient(0deg, black, transparent);
+		mask-image: linear-gradient(0deg, black, transparent);
+	}
+
+	@media (min-width: 768px) {
+		.hero-bg,
+		.contact-bg {
+			opacity: 0.8;
+		}
 	}
 </style>
 a

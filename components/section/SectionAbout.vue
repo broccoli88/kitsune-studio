@@ -10,19 +10,23 @@
 	<SectionPartFrame>
 		<SectionPartHeader> {{ mainPageText.about.title }} </SectionPartHeader>
 		<SectionPartBody>
-			<p class="pl-95">
+			<p class="md:pl-95">
 				{{ mainPageText.about.p }}
 			</p>
 		</SectionPartBody>
-		<!-- <AppImage :img-src="imgSrc" class="about--img" /> -->
+		<AppImage :img-src="imgSrc" class="about--img" />
 	</SectionPartFrame>
 </template>
 
 <style scoped>
+	.about--img {
+		--right: 0;
+		--top: 7vh;
+	}
+
 	@media (min-width: 768px) {
 		.about--img {
-			--right: -400px;
-			--top: 5vh;
+			--right: -40vw;
 		}
 	}
 </style>

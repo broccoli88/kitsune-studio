@@ -16,7 +16,7 @@
 </script>
 
 <template>
-	<article class="mt-11 grid max-w-[65ch]">
+	<article class="mt-11 grid max-w-[55ch]">
 		<slot> </slot>
 		<AppButton
 			class="justify-self-end mt-11 order-2"

@@ -5,7 +5,7 @@
 <template>
 	<section class="hero">
 		<section
-			class="text-center max-w-[55ch] md:text-left md:self-end md:m-[60px]"
+			class="text-center px-5 max-w-[55ch] md:text-left md:self-end md:m-[60px]"
 		>
 			<!-- ?Think about placing text in bottom left corner -->
 			<header class="lowercase mb-6">

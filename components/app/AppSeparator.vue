@@ -19,6 +19,7 @@
 
 		position: absolute;
 		width: var(--_parent-width);
+		max-width: 500px;
 		height: var(--_parent-height);
 		bottom: var(--_sep-bottom);
 		left: var(--_sep-left);
