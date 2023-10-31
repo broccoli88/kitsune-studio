@@ -22,14 +22,19 @@
 <style scoped>
 	.contact__bg {
 		position: absolute;
-		top: 0;
+		top: -20%;
 		left: 0;
-		width: 100%;
-		height: 130%;
+		width: 150%;
+		height: 180%;
 		z-index: -1;
 		opacity: 0.7;
+		-webkit-mask-image: linear-gradient(to top, black 10%, transparent);
+		mask-image: linear-gradient(to top, black 10%, transparent);
 	}
 
+	.contact__bg :deep(img) {
+		object-position: top;
+	}
 	@media (min-width: 768px) {
 		.contact-wrapper {
 			grid-template-columns: 40% 1fr;
@@ -37,11 +42,7 @@
 		}
 
 		.contact__bg {
-			top: -40%;
-			width: 100%;
-			height: 160%;
-			-webkit-mask-image: linear-gradient(to top, black 10%, transparent);
-			mask-image: linear-gradient(to top, black 10%, transparent);
+			left: -30%;
 		}
 	}
 </style>

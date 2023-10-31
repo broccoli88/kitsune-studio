@@ -31,7 +31,7 @@
 				</ul>
 			</SectionPartBody>
 		</div>
-		<AppImage :img-src="imgSrc" class="offer--img" />
+		<AppImage :img-src="imgSrc" class="offer--bg" />
 	</SectionPartFrame>
 </template>
 
@@ -51,9 +51,21 @@
 		transform: translateY(-50%);
 	}
 
-	.offer--img {
-		--right: 200px;
+	.offer--bg {
+		--right: -5vw;
 		--top: 5vh;
 		--deg: 135deg;
+		--opacity: 0.5;
+		--transparency: 70%;
+	}
+
+	@media (min-width: 768px) {
+		.offer--bg {
+			--right: 10vw;
+			--top: 5vh;
+			--deg: 135deg;
+			--opacity: 0.5;
+			--transparency: 70%;
+		}
 	}
 </style>

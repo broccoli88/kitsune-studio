@@ -12,7 +12,7 @@
 <style scoped>
 	.header--separator {
 		--parent-height: min-content;
-		--parent-width: 40vw;
+		--parent-width: 60vw;
 		--sep-height: 1px;
 		--sep-width: 100%;
 		--sep-bottom: -15px;
@@ -20,5 +20,11 @@
 		--sep-line-bot: 4.5px;
 		--sep-line-left: 20px;
 		--sep-dot-bot: 0;
+	}
+
+	@media (min-width: 768px) {
+		.header--separator {
+			--parent-width: 40vw;
+		}
 	}
 </style>

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<footer class="footer flex gap-3 justify-center items-center py-6">
+	<footer class="footer flex gap-3 justify-center items-center py-6 relative">
 		<p>made by</p>
 		<AppLogo />
 	</footer>

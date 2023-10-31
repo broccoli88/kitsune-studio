@@ -1,6 +1,7 @@
 <template>
-	<div class="overflow-y-hidden isolate">
+	<div class="overflow-y-hidden">
+		<TheMobileNav />
 		<NuxtPage />
-		<TheFooter />
+		<!-- <TheFooter /> -->
 	</div>
 </template>

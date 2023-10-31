@@ -14,7 +14,7 @@
 				{{ mainPageText.about.p }}
 			</p>
 		</SectionPartBody>
-		<AppImage :img-src="imgSrc" class="about--img" />
+		<!-- <AppImage :img-src="imgSrc" class="about--img" /> -->
 	</SectionPartFrame>
 </template>
 

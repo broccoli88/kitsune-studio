@@ -38,8 +38,8 @@
 			transparent var(--_transparency)
 		);
 		mask-image: linear-gradient(
-			var(--_deg),
 			black,
+			var(--clr-bg),
 			transparent var(--_transparency)
 		);
 	}
