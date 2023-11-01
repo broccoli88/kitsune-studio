@@ -1,14 +1,13 @@
 <script setup>
-	import links from "../data/links.json";
-	import { usePreventScrolling } from "@/modules/usePreventScrolling";
+	import links from "@/data/links.json";
 
-	const insideLinks = links.inside;
+	const navLinks = Object.values(links);
 	const isMobileMenuOpen = ref(false);
-
 	const openMobileMenu = () =>
 		(isMobileMenuOpen.value = !isMobileMenuOpen.value);
 
 	watch(isMobileMenuOpen, () => usePreventScrolling(isMobileMenuOpen));
+	console.log(navLinks.value);
 </script>
 
 <template>
@@ -30,9 +29,10 @@
 		>
 			<AppButton
 				class="text-2xl"
-				v-for="{ name, link } in insideLinks"
+				v-for="{ name, link, title } in navLinks"
 				:key="name"
 				:name="name"
+				:title="title"
 				:link="link"
 			/>
 		</nav>

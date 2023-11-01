@@ -1,9 +1,26 @@
 {
-	"inside": [
-		{ "name": "about", "link": "#" },
-		{ "name": "offer", "link": "#" },
-		{ "name": "work", "link": "#" },
-		{ "name": "contact", "link": "#" }
-	],
-	"outside": [{ "name": "about", "link": "#" }]
+	"about": {
+		"name": "about",
+		"lng_name": " want to know more ?",
+		"link": { "name": "about" },
+		"title": "go to about page"
+	},
+	"offer": {
+		"name": "offer",
+		"lng_name": "want to learn more ?",
+		"link": { "name": "offer" },
+		"title": "go to offer page"
+	},
+	"projects": {
+		"name": "projects",
+		"lng_name": "want to see more ?",
+		"link": { "name": "projects" },
+		"title": "go to our projects page"
+	},
+	"contact": {
+		"name": "contact",
+		"lng_name": "want to hear more ?",
+		"link": { "name": "contact" },
+		"title": "go to contact page"
+	}
 }

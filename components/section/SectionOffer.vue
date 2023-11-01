@@ -3,10 +3,12 @@
 	import SectionPartHeader from "./section-part/SectionPartHeader.vue";
 	import SectionPartBody from "./section-part/SectionPartBody.vue";
 	import mainPageText from "../../data/main-page-text.json";
+	import links from "@/data/links.json";
 
 	const imgSrc = "/images/offer.png";
 	const offer = mainPageText;
 	const subSectionTexts = offer.offer["sub-section"];
+	const offerLinks = links.offer;
 </script>
 
 <template>
@@ -15,7 +17,12 @@
 			<SectionPartHeader>{{
 				mainPageText.offer.title
 			}}</SectionPartHeader>
-			<SectionPartBody class="md:pl-95">
+			<SectionPartBody
+				:name="offerLinks.lng_name"
+				:title="offerLinks.title"
+				:link="offerLinks.link"
+				class="md:pl-95"
+			>
 				<p>{{ offer.offer.p }}</p>
 				<ul>
 					<li

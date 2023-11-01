@@ -1,0 +1,27 @@
+{
+	"fullName": {
+		"label": "full name",
+		"id": "full-name",
+		"placeholder": "enter your full name..."
+	},
+	"email": {
+		"label": "email",
+		"id": "email",
+		"placeholder": "enter your email..."
+	},
+	"phone": {
+		"label": "phone",
+		"id": "phone",
+		"placeholder": "enter your phone..."
+	},
+	"inquiry": {
+		"label": "inquiry",
+		"id": "inquiry",
+		"placeholder": "what is your inquiry..."
+	},
+	"message": {
+		"label": "message",
+		"id": "message",
+		"placeholder": "enter your message..."
+	}
+}

@@ -1,6 +1,6 @@
 <script setup>
-	import links from "../data/links.json";
-	const insideLinks = links.inside;
+	import links from "@/data/links.json";
+	const navLinks = Object.values(links);
 </script>
 
 <template>
@@ -11,9 +11,10 @@
 		<AppLogo />
 		<nav class="flex-col justify-end gap-5 flex">
 			<AppButton
-				v-for="{ name, link } in insideLinks"
+				v-for="{ name, link, title } in navLinks"
 				:key="name"
 				:name="name"
+				:title="title"
 				:link="link"
 			/>
 		</nav>

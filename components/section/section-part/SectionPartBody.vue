@@ -16,10 +16,10 @@
 </script>
 
 <template>
-	<article class="mt-11 grid max-w-[55ch]">
+	<article class="mt-11 grid max-w-[55ch] app-body">
 		<slot> </slot>
 		<AppButton
-			class="justify-self-end mt-11 order-2"
+			class="app-btn justify-self-end mt-11 order-2"
 			:name="name"
 			:link="link"
 			:title="title"
@@ -28,4 +28,11 @@
 </template>
 ;
 
-<style scoped></style>
+<style scoped>
+	.app-body {
+		--_btn-display: var(--btn-display, flex);
+	}
+	.app-btn {
+		display: var(--_btn-display);
+	}
+</style>

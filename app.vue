@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<!-- <TheMobileNav /> -->
-		<!-- <NuxtPage /> -->
-		<!-- <TheFooter /> -->
+	<div class="relative">
+		<TheMobileNav />
+		<NuxtPage />
+		<TheFooter />
 	</div>
 </template>

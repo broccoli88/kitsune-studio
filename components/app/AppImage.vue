@@ -2,11 +2,11 @@
 	defineProps({
 		imgSrc: {
 			type: String,
-			default: "#",
+			default: "",
 		},
 		imgAlt: {
 			type: String,
-			default: "#",
+			default: "",
 		},
 	});
 </script>

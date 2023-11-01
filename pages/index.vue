@@ -5,14 +5,14 @@
 </script>
 
 <template>
-	<main class="relative isolate overflow-hidden">
-		<!-- <NuxtPicture src="/images/bg1.png" class="hero-bg" /> -->
-		<!-- <NuxtPicture src="/images/contact-bg.png" class="contact-bg" /> -->
-		<!-- <SectionHero /> -->
-		<!-- <SectionAbout /> -->
-		<!-- <SectionOffer /> -->
-		<!-- <SectionWork /> -->
-		<!-- <SectionContact /> -->
+	<main class="relative isolate overflow-hidden grid gap-24 pb-48">
+		<NuxtPicture src="/images/bg1.png" class="hero-bg" />
+		<NuxtPicture src="/images/contact-bg.png" class="contact-bg" />
+		<SectionHero />
+		<SectionAbout />
+		<SectionOffer />
+		<SectionProjects />
+		<SectionContact />
 	</main>
 </template>
 
@@ -30,7 +30,7 @@
 		width: 120%;
 		height: 140vh;
 		-webkit-mask-image: linear-gradient(-175deg, black, transparent);
-		mask-image: linear-gradient(-175deg, black, transparent 75%);
+		mask-image: linear-gradient(-175deg, black, transparent 95);
 	}
 
 	.hero-bg :deep(img),

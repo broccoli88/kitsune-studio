@@ -3,8 +3,11 @@
 	import SectionPartHeader from "./section-part/SectionPartHeader.vue";
 	import SectionPartBody from "./section-part/SectionPartBody.vue";
 	import SectionPartProject from "./section-part/SectionPartProject.vue";
-	import mainPageText from "../../data/main-page-text.json";
-	import projects from "../../data/projects.json";
+	import mainPageText from "@/data/main-page-text.json";
+	import projects from "@/data/projects.json";
+	import links from "@/data/links.json";
+
+	const projectsLinks = links.projects;
 
 	const displayFirstProject = () => {
 		const projects = document.querySelectorAll(".project");
@@ -22,10 +25,14 @@
 		<SectionPartFrame class="work__frame">
 			<div>
 				<SectionPartHeader>
-					{{ mainPageText.work.title }}</SectionPartHeader
+					{{ mainPageText.projects.title }}</SectionPartHeader
 				>
-				<SectionPartBody>
-					<p class="md:pl-95">{{ mainPageText.work.p }}</p>
+				<SectionPartBody
+					:name="projectsLinks.lng_name"
+					:title="projectsLinks.title"
+					:link="projectsLinks.link"
+				>
+					<p class="md:pl-95">{{ mainPageText.projects.p }}</p>
 				</SectionPartBody>
 			</div>
 		</SectionPartFrame>
@@ -68,6 +75,12 @@
 			max-width: 1300px;
 			flex-direction: row;
 			gap: 0;
+		}
+	}
+
+	@media (min-width: 1600px) {
+		.work__projects {
+			max-width: 1600px;
 		}
 	}
 </style>

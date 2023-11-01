@@ -2,7 +2,7 @@
 
 <template>
 	<Transition name="minify" mode="out-in">
-		<slot />
+		<slot></slot>
 	</Transition>
 </template>
 
