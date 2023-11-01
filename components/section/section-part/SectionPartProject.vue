@@ -162,6 +162,7 @@
 			background-color: var(--clr-bg);
 			position: relative;
 			transition: var(--tr-txt) all linear;
+			z-index: 1;
 		}
 
 		.project__btn::after {
