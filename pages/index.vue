@@ -5,14 +5,14 @@
 </script>
 
 <template>
-	<main class="relative isolate overflow-hidden grid gap-24 pb-48">
-		<NuxtPicture src="/images/bg1.png" class="hero-bg" />
-		<NuxtPicture src="/images/contact-bg.png" class="contact-bg" />
+	<main class="relative isolate overflow-hidden grid gap-24 pb-32">
+		<NuxtPicture src="/images/bg1.webp" class="hero-bg" />
 		<SectionHero />
 		<SectionAbout />
 		<SectionOffer />
 		<SectionProjects />
 		<SectionContact />
+		<NuxtPicture src="/images/contact-bg.webp" class="contact-bg" />
 	</main>
 </template>
 
@@ -27,8 +27,9 @@
 
 	.hero-bg {
 		top: 0;
-		width: 120%;
+		width: 115%;
 		height: 140vh;
+		z-index: -1;
 		-webkit-mask-image: linear-gradient(-175deg, black, transparent);
 		mask-image: linear-gradient(-175deg, black, transparent 95);
 	}
@@ -51,6 +52,9 @@
 		.contact-bg {
 			opacity: 0.8;
 		}
+
+		.contact-bg {
+			left: -15%;
+		}
 	}
 </style>
-a

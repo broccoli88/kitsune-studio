@@ -17,7 +17,7 @@
 </template>
 
 <style scoped>
-	@media (min-width: 768px) {
+	@media (min-width: 1100px) {
 		.contact-wrapper {
 			grid-template-columns: 40% 1fr;
 			gap: 40px;

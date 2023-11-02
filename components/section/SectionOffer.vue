@@ -5,7 +5,7 @@
 	import mainPageText from "../../data/main-page-text.json";
 	import links from "@/data/links.json";
 
-	const imgSrc = "/images/offer.png";
+	const imgSrc = "/images/offer.webp";
 	const offer = mainPageText;
 	const subSectionTexts = offer.offer["sub-section"];
 	const offerLinks = links.offer;

@@ -27,7 +27,7 @@
 			class="navbar__nav"
 			:class="{ 'navbar__nav-active': isMobileMenuOpen }"
 		>
-			<AppButton
+			<AppButtonLink
 				class="text-2xl"
 				v-for="{ name, link, title } in navLinks"
 				:key="name"

@@ -18,7 +18,7 @@
 <template>
 	<article class="mt-11 grid max-w-[55ch] app-body">
 		<slot> </slot>
-		<AppButton
+		<AppButtonLink
 			class="app-btn justify-self-end mt-11 order-2"
 			:name="name"
 			:link="link"

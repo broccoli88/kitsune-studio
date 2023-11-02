@@ -10,7 +10,7 @@
 		<AppSeparator />
 		<AppLogo />
 		<nav class="flex-col justify-end gap-5 flex">
-			<AppButton
+			<AppButtonLink
 				v-for="{ name, link, title } in navLinks"
 				:key="name"
 				:name="name"

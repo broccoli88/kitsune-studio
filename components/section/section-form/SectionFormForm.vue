@@ -56,7 +56,7 @@
 			:placeholder="message.placeholder"
 			v-model="state.message"
 		/>
-		<AppButton class="self-end" />
+		<AppButton class="self-end mt-11"> send message ? </AppButton>
 	</form>
 </template>
 
