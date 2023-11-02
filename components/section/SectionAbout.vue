@@ -5,7 +5,7 @@
 	import mainPageText from "@/data/main-page-text.json";
 	import links from "@/data/links.json";
 
-	const imgSrc = "/images/about.png";
+	const imgSrc = "/images/about.webp";
 	const aboutLinks = links.about;
 </script>
 
@@ -27,10 +27,6 @@
 </template>
 
 <style scoped>
-	.about-body {
-		/* --btn-display: none; */
-	}
-
 	.about--img {
 		--right: 0;
 		--top: 7vh;
