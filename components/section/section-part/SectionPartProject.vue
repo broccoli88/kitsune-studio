@@ -12,6 +12,10 @@
 			type: String,
 			default: "",
 		},
+		id: {
+			type: Number,
+			default: 1,
+		},
 	});
 	const projectRef = ref();
 
@@ -48,7 +52,7 @@
 						</p>
 					</div>
 					<NuxtLink
-						to="#"
+						:to="`/projects/${id}`"
 						class="flex btn items-center text-[var(--clr-txt)] hover:text-white gap-1"
 					>
 						details

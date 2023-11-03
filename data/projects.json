@@ -1,23 +1,27 @@
 [
 	{
+		"id": 1,
 		"name": "homey goat studio",
 		"shortDescription": "Website for Miniature Painting Studio",
 		"description": "Website for Miniature Painting Studio including gallery connected with Firebase Firestore, Administration panel connected with Firebase Firestore, Authentication and Storage, and Blog implementation based on headless CMS. Responsive design with mobile-first approach built with Vue.js framework and Pinia state management.",
 		"previewImg": "/images/projects/hg.webp"
 	},
 	{
+		"id": 2,
 		"name": "anime db",
 		"shortDescription": "Anime series / movies database.",
 		"description": "Responsive Vue.js app using the Composition API, which integrates an Anime DB REST Api, also with implemented Firestore which allows user to create his list of anime.",
 		"previewImg": "/images/projects/adb.webp"
 	},
 	{
+		"id": 3,
 		"name": "invoice app",
 		"shortDescription": "Application for managing invoices.",
 		"description": "CRUD app integrating Pinia state management and Firebase for storing and retrieving data.",
 		"previewImg": "/images/projects/in.webp"
 	},
 	{
+		"id": 4,
 		"name": "hostify landing page",
 		"shortDescription": "Landing page for hosting company.",
 		"description": "Responsive Landing page for an imaginary hosting company.",

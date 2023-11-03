@@ -45,6 +45,7 @@
 				:title="project.name"
 				:description="project.shortDescription"
 				:preview="project.previewImg"
+				:id="project.id"
 			/>
 		</div>
 	</div>
