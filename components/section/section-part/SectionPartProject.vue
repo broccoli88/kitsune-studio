@@ -38,12 +38,26 @@
 		</button>
 		<NuxtPicture :src="preview" class="project__img" />
 
-		<div class="project__description-alt-wrapper">
-			<div class="project__description-alt">
-				<h4>{{ title }}</h4>
-				<p>
-					{{ description }}
-				</p>
+		<div class="project__description-alt-wrapper-container">
+			<div class="project__description-alt-wrapper">
+				<div class="project__description-alt">
+					<div>
+						<h4>{{ title }}</h4>
+						<p>
+							{{ description }}
+						</p>
+					</div>
+					<NuxtLink
+						to="#"
+						class="flex btn items-center text-[var(--clr-txt)] hover:text-white gap-1"
+					>
+						details
+						<Icon
+							name="ph:arrow-elbow-down-right-fill"
+							size="20px"
+						/>
+					</NuxtLink>
+				</div>
 			</div>
 		</div>
 	</article>
@@ -96,6 +110,10 @@
 		order: 1;
 	}
 
+	.project__img :deep(img) {
+		object-position: top;
+	}
+
 	.project__description-alt-wrapper {
 		display: none;
 	}
@@ -104,10 +122,7 @@
 		.project {
 			grid-template-columns: var(--col-width-btn) 0fr;
 			grid-template-rows: 70vh;
-			/* overflow: hidden; */
 			transition: var(--tr-col) all ease-out;
-			/* transform-origin: left; */
-			/* position: relative; */
 			isolation: isolate;
 		}
 
@@ -126,6 +141,16 @@
 			grid-template-columns: var(--col-width-btn) 1fr;
 		}
 
+		.project__description-alt-wrapper-container {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: var(--col-width-btn);
+			width: 100%;
+			background-color: var(--clr-bg);
+			z-index: 0;
+		}
+
 		.project__description-alt-wrapper {
 			position: absolute;
 			bottom: 0;
@@ -136,12 +161,20 @@
 			flex-direction: column;
 			justify-content: center;
 			overflow-x: hidden;
+			background-image: linear-gradient(
+				to right,
+				var(--clr-bg) 70%,
+				var(--clr-primary)
+			);
 		}
 
 		.project__description-alt {
 			transform: translateX(-100%);
 			transition: var(--tr-txt) all linear var(--tr-col);
 			opacity: 0;
+			display: flex;
+			justify-content: space-between;
+			padding-right: 30px;
 		}
 
 		.project__description-alt p,
@@ -163,6 +196,7 @@
 			position: relative;
 			transition: var(--tr-txt) all linear;
 			z-index: 1;
+			max-height: 700px;
 		}
 
 		.project__btn::after {
@@ -223,7 +257,6 @@
 		.project__img {
 			position: absolute;
 			inset: 0;
-			/* z-index: -1; */
 		}
 	}
 </style>

@@ -1,7 +1,6 @@
 <script setup>
 	const route = useRoute();
 	const isMainPage = ref(true);
-	console.log("route:", route);
 
 	watch(
 		() => route.name,

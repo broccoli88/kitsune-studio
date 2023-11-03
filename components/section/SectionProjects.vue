@@ -43,7 +43,7 @@
 				v-for="(project, index) in projects"
 				:key="index"
 				:title="project.name"
-				:description="project.description"
+				:description="project.shortDescription"
 				:preview="project.previewImg"
 			/>
 		</div>
@@ -71,16 +71,11 @@
 	@media (min-width: 768px) {
 		.work__projects {
 			width: 100%;
+			max-height: 700px;
 			margin-inline: auto;
 			max-width: 1300px;
 			flex-direction: row;
 			gap: 0;
-		}
-	}
-
-	@media (min-width: 1600px) {
-		.work__projects {
-			max-width: 1600px;
 		}
 	}
 </style>

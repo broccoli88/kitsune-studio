@@ -9,8 +9,8 @@
 		<NuxtPicture src="/images/bg1.webp" class="hero-bg" />
 		<SectionHero />
 		<SectionAbout />
-		<SectionOffer />
 		<SectionProjects />
+		<SectionOffer />
 		<SectionContact />
 		<NuxtPicture src="/images/contact-bg.webp" class="contact-bg" />
 	</main>

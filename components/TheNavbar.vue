@@ -24,7 +24,7 @@
 <style scoped>
 	@media (min-width: 768px) {
 		.navbar {
-			background-image: linear-gradient(var(--clr-bg), transparent 25%);
+			background-image: linear-gradient(var(--clr-bg), transparent 35%);
 		}
 	}
 </style>
